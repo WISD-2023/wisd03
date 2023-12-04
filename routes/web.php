@@ -70,12 +70,20 @@ Route::get('/ee/e2',function (){
     return view('ee.e1');
 });
 
+
 Route::get('/hh/h1',function (){
     return view('hh.h1');
 });
 
-Route::get('/hh/h2',function (){
+Route::get('/hh/h2',function () {
     return view('hh.h2');
+});
+Route::get('/gg/g1',function (){
+    return view('gg.g1');
+});
+
+Route::get('/gg/g2',function (){
+    return view('gg.g2');
 });
 
 Route::middleware('auth')->group(function () {
