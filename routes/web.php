@@ -70,6 +70,10 @@ Route::get('/ee/e2',function (){
     return view('ee.e1');
 });
 
+Route::get('/hh/h1',function (){
+    return view('hh.h1');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
