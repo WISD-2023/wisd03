@@ -67,7 +67,7 @@ Route::get('/ee/e1',function (){
 });
 
 Route::get('/ee/e2',function (){
-    return view('ee.e1');
+    return view('ee.e2');
 });
 
 
