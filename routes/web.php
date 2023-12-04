@@ -54,6 +54,10 @@ Route::get('/cc/c2',function (){
     return view('cc.c2');
 });
 
+Route::get('/ff/f1',function (){
+    return view('ff.f1');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
