@@ -38,6 +38,10 @@ Route::get('/bb/b2',function (){
     return view('bb.b2');
 });
 
+Route::get('/cc/c1',function (){
+    return view('cc.c1');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
